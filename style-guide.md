@@ -35,8 +35,3 @@ The designs were created to the following widths:
 
 - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - Weights: 400
-
-@font-face {
-  font-family: lato;
-  src: url(assets/font/Lato.otf) format("opentype");
-}
