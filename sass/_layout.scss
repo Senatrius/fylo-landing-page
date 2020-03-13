@@ -1,0 +1,238 @@
+.header {
+  padding: 3.5rem 0 1.5rem 0;
+
+  &__nav {
+    display: flex;
+
+    &-link {
+      margin-left: 3rem;
+      color: black;
+      font-family: 'Raleway', sans-serif;
+      
+      &:hover {
+        border-bottom: 1px solid currentColor;
+      }
+    }
+  }
+
+  &__logo {
+    width: 13%;
+  }
+}
+
+.cta {
+  padding: 2.5rem 0 7.5rem 0;
+
+  &__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.5;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    padding-right: 3rem;
+    margin: .75rem 0 1.25rem 0;
+  }
+
+  &__image {
+    flex: 1;
+  }
+
+  &__signup {
+    display: flex;
+    width: 85%;
+
+    .input {
+      &--field {
+        flex: 0 0 60%
+      }
+
+      &--btn {
+        margin-left: 1rem;
+        flex: 1;
+      }
+    }
+  }
+}
+
+.main {
+  padding: 2.5rem 0 5rem 0;
+  background: $neutral-blue;
+
+  &__text {
+    flex: 0 0 57.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__image {
+    flex: 0 0 42.5%;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.75rem;
+  }
+
+  &__desc {
+    width: 74%;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+  }
+
+  &__link {
+    color: $secondary-moderate-cyan;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid $secondary-moderate-cyan;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      background: url(../images/icon-arrow.svg) no-repeat center center/cover;
+      width: 1.15rem;
+      height: 1.15rem;
+      display: inline-block;
+      margin-left: .5rem;
+      transition: .1s ease-in;
+    }
+
+    &:hover::after {
+      margin-left: .75rem;
+    }
+  }
+
+  .review {
+    margin-top: 2.75rem;
+  }
+}
+
+.cta-2 {
+  background: $primary-desaturated-blue;
+  padding: 3.75rem 0;
+
+  &__text {
+    color: white;
+    flex: 0 0 57.5%
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    width: 74%;
+    line-height: 1.5;
+  }
+
+  &__signup {
+    flex: 0 0 42.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .input {
+      &--field {
+        min-width: 0;
+        width: 100%;
+        margin-bottom: .75rem;
+      }
+
+      &--btn {
+        padding: .75rem 1.5rem;
+      }
+    }
+  }
+}
+
+.footer {
+  background: $primary-dark-blue;
+  padding: 4.25rem 0 3rem 0;
+  color: white;
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33%;
+
+    & > * {
+      display: flex;
+      align-items: center;
+      margin-bottom: .75rem;
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__nav {
+    column-count: 2;
+    flex: 0 0 42%;
+
+    &-link {
+      margin-bottom: .75rem;
+
+      & > a {
+        color: white;
+        
+        &:hover {
+          border-bottom: 1px solid currentColor;
+        }
+      }
+    }
+  }
+
+  &__social {
+    flex: 1;
+    display: flex;
+
+    &-link {
+      border: 1px solid white;
+      display: inline-block;
+      width : 2rem;
+      height: 2rem;
+      margin-right: .5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .5rem;
+      border-radius: 100rem;
+      color: white;
+      transition: .1s ease-in-out;
+      
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
