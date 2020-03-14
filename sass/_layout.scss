@@ -129,7 +129,7 @@
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 1rem;
   }
@@ -172,6 +172,7 @@
   &__logo {
     filter: brightness(0) invert(1);
     margin-bottom: 1.5rem;
+    width: 13%;
   }
 
   &__content {
@@ -233,6 +234,325 @@
       &:hover {
         transform: scale(1.15);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .cta {
+    &__title {
+      font-size: 1.9rem;
+      line-height: 1.3;
+    }
+
+    &__text {
+      flex: 1.2;
+    }
+
+    &__signup {
+      width: 90%;
+    }
+  }
+
+  .main {
+    &__title {
+      font-size: 1.9rem;
+      line-height: 1.3;
+    }
+
+    &__desc {
+      width: 85%;
+    }
+
+    .review {
+      width: 70%;
+    }
+  }
+
+  .cta-2 {
+    &__title {
+      font-size: 1.75rem;
+      line-height: 1.3;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    &__title {
+      font-size: 1.7rem;
+      line-height: 1.2;
+    }
+
+    &__desc {
+      padding-right: 2rem;
+      margin: .5rem 0 1rem 0;
+    }
+
+    &__signup {
+      flex-direction: column;
+  
+      .input {
+        &--field {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+  
+        &--btn {
+          margin-left: 0;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .main {
+    &__title {
+      font-size: 1.7rem;
+      line-height: 1.2;
+      margin-bottom: .75rem;
+    }
+
+    &__desc {
+      width: 90%;
+      margin-bottom: .5rem;
+    }
+
+    .review {
+      width: 90%;
+      margin-top: 1.75rem;
+    }
+  }
+
+  .cta-2 {
+    &__title {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin-bottom: .75rem;
+    }
+
+    &__desc {
+      width: 90%;
+    }
+  }
+
+  .footer {
+    &__contacts {
+      flex: 0 0 40%;
+    }
+
+    &__nav {
+      flex: 0 0 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header {
+    padding: 1.5rem 0 3.75rem 0;
+
+    .container {
+      flex-direction: row;
+    }
+
+    &__logo {
+      width: 25%;
+    }
+
+    &__nav {
+      &-link {
+        margin-left: 1.5rem;
+        font-size: .8rem;
+        
+        &:hover {
+          border-bottom: 1px solid currentColor;
+        }
+      }
+    }
+  }
+
+  .cta {
+    text-align: center;
+
+    .container {
+      width: 85%;
+    }
+
+    &__image {
+      order: 1;
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      order: 2;
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 1.25rem;
+    }
+
+    &__desc {
+      line-height: 1.4;
+      margin-bottom: 1.85rem;
+      padding-right: 0;
+    }
+
+    &__signup {
+      width: 100%;
+
+      .input {
+        &--btn {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .main {
+    &__image {
+      order: 1;
+      margin: .5rem 0 6.75rem 0;
+    }
+
+    &__text {
+      order: 2;
+
+    }
+
+    &__title {
+      align-self: center;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    &__desc {
+      width: 100%;
+      padding-right: 0;
+      line-height: 1.65;
+      color: $primary-desaturated-blue;
+      margin-bottom: .75rem;
+    }
+
+    &__link {
+      text-align: center;
+      align-self: center;
+      padding-bottom: .4rem;
+      font-size: .8rem;
+      margin: 1.25rem 0 2.5rem 0;
+    }
+
+    .review {
+      margin: 0 auto;
+      padding: 1.5rem 1.85rem;
+      width: 92%;
+
+      &__text {
+        font-size: .7rem;
+        margin-bottom: .75rem;
+      }
+
+      &__quotes {
+        margin-bottom: .5rem;
+      }
+
+      .reviewer {
+        &__photo {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        &__name {
+          font-size: .7rem;
+        }
+
+        &__position {
+          font-size: .5rem;;
+        }
+      }
+    }
+  }
+
+  .cta-2 {
+    padding: 3.5rem 0 4rem 0;
+
+    .container {
+      width: 72.5%;
+    }
+
+    &__title {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    &__desc {
+      width: 100%;
+      font-size: .8rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    &__signup {
+      width: 100%;
+  
+      .input {
+        &--field {
+          margin-bottom: .5rem;
+          font-size: .75rem;
+          padding: .65rem;
+        }
+  
+        &--btn {
+          font-family: 'Open Sans', sans-serif;
+          font-size: .75rem;
+          width: 100%;
+          padding: .5rem;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 3.5rem 0 3rem 0;
+
+    .container {
+      width: 85%;
+    }
+
+    &__logo {
+      width: 45%;
+    }
+
+    &__content {
+      flex-direction: column;
+      font-size: .85rem;
+    }
+
+    &__contacts {
+      margin-bottom: 1.5rem;
+
+      img {
+        margin-right: .75rem;
+      }
+    }
+
+    &__nav {
+      column-count: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    &__social {
+      justify-content: center;
     }
   }
 }

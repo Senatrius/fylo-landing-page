@@ -180,7 +180,7 @@ body {
 }
 
 .cta-2__title {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 1rem;
 }
@@ -236,6 +236,7 @@ body {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   margin-bottom: 1.5rem;
+  width: 13%;
 }
 
 .footer__content {
@@ -328,6 +329,277 @@ body {
           transform: scale(1.15);
 }
 
+@media screen and (max-width: 1050px) {
+  .cta__title {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+  .cta__text {
+    -webkit-box-flex: 1.2;
+        -ms-flex: 1.2;
+            flex: 1.2;
+  }
+  .cta__signup {
+    width: 90%;
+  }
+  .main__title {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+  .main__desc {
+    width: 85%;
+  }
+  .main .review {
+    width: 70%;
+  }
+  .cta-2__title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta__title {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+  .cta__desc {
+    padding-right: 2rem;
+    margin: .5rem 0 1rem 0;
+  }
+  .cta__signup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cta__signup .input--field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .cta__signup .input--btn {
+    margin-left: 0;
+    width: 50%;
+  }
+  .main__title {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin-bottom: .75rem;
+  }
+  .main__desc {
+    width: 90%;
+    margin-bottom: .5rem;
+  }
+  .main .review {
+    width: 90%;
+    margin-top: 1.75rem;
+  }
+  .cta-2__title {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: .75rem;
+  }
+  .cta-2__desc {
+    width: 90%;
+  }
+  .footer__contacts {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+  }
+  .footer__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header {
+    padding: 1.5rem 0 3.75rem 0;
+  }
+  .header .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__logo {
+    width: 25%;
+  }
+  .header__nav-link {
+    margin-left: 1.5rem;
+    font-size: .8rem;
+  }
+  .header__nav-link:hover {
+    border-bottom: 1px solid currentColor;
+  }
+  .cta {
+    text-align: center;
+  }
+  .cta .container {
+    width: 85%;
+  }
+  .cta__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 3rem;
+  }
+  .cta__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cta__title {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1.25rem;
+  }
+  .cta__desc {
+    line-height: 1.4;
+    margin-bottom: 1.85rem;
+    padding-right: 0;
+  }
+  .cta__signup {
+    width: 100%;
+  }
+  .cta__signup .input--btn {
+    margin-left: 0;
+    width: 100%;
+  }
+  .main__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: .5rem 0 6.75rem 0;
+  }
+  .main__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main__title {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .main__desc {
+    width: 100%;
+    padding-right: 0;
+    line-height: 1.65;
+    color: #585989;
+    margin-bottom: .75rem;
+  }
+  .main__link {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-bottom: .4rem;
+    font-size: .8rem;
+    margin: 1.25rem 0 2.5rem 0;
+  }
+  .main .review {
+    margin: 0 auto;
+    padding: 1.5rem 1.85rem;
+    width: 92%;
+  }
+  .main .review__text {
+    font-size: .7rem;
+    margin-bottom: .75rem;
+  }
+  .main .review__quotes {
+    margin-bottom: .5rem;
+  }
+  .main .review .reviewer__photo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .main .review .reviewer__name {
+    font-size: .7rem;
+  }
+  .main .review .reviewer__position {
+    font-size: .5rem;
+  }
+  .cta-2 {
+    padding: 3.5rem 0 4rem 0;
+  }
+  .cta-2 .container {
+    width: 72.5%;
+  }
+  .cta-2__title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .cta-2__desc {
+    width: 100%;
+    font-size: .8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .cta-2__signup {
+    width: 100%;
+  }
+  .cta-2__signup .input--field {
+    margin-bottom: .5rem;
+    font-size: .75rem;
+    padding: .65rem;
+  }
+  .cta-2__signup .input--btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    width: 100%;
+    padding: .5rem;
+  }
+  .footer {
+    padding: 3.5rem 0 3rem 0;
+  }
+  .footer .container {
+    width: 85%;
+  }
+  .footer__logo {
+    width: 45%;
+  }
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: .85rem;
+  }
+  .footer__contacts {
+    margin-bottom: 1.5rem;
+  }
+  .footer__contacts img {
+    margin-right: .75rem;
+  }
+  .footer__nav {
+    -webkit-column-count: 1;
+            column-count: 1;
+    margin-bottom: 1.5rem;
+  }
+  .footer__social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .container {
   width: 90%;
   height: 100%;
@@ -389,6 +661,7 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
 }
 
 .input--btn:hover {
@@ -397,6 +670,8 @@ body {
 
 .curve {
   display: block;
+  width: 100%;
+  height: 100%;
   max-height: 10rem;
 }
 
